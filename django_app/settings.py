@@ -18,6 +18,17 @@ import os
 import sys
 
 
+# --> NON-DJANGO SETTINGS
+
+# based on "Deploy a Django App on App Platform" (DigitalOcean)
+# https://docs.digitalocean.com/tutorials/app-deploy-django-app/
+
+# development mode variable to use local or remote database seemlessly
+DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
+
+
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -143,13 +154,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-
-# --> NON-DJANGO SETTINGS
-
-# based on "Deploy a Django App on App Platform" (DigitalOcean)
-# https://docs.digitalocean.com/tutorials/app-deploy-django-app/
-
-# development mode variable to use local or remote database seemlessly
-DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
