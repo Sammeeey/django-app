@@ -7,3 +7,5 @@ Find the app at [https://whale-app-k7ise.ondigitalocean.app/](https://whale-app-
 
 See [https://whale-app-k7ise.ondigitalocean.app/polls/pollstatic](https://whale-app-k7ise.ondigitalocean.app/polls/pollstatic)
 for validation of correct static files serving.
+
+Find the build process in the [collection of Twitch streams (Deploy Django App🐍 w/ DigitalOcean🌊)](https://www.twitch.tv/collections/F45zxk568BYyHA?filter=collections)
